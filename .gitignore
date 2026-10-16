@@ -1,0 +1,10 @@
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+catboost_info/
+data/
+MINDsmall_train/
+MINDsmall_dev/

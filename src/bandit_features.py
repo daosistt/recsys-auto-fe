@@ -307,32 +307,6 @@ def evaluate_features(
     )
 
 
-def evaluate_arm(
-    data: pd.DataFrame,
-    features: list[str],
-    arm: FeatureArm,
-    fold: TemporalFold,
-    baseline_score: float,
-    model_params: ModelParams | None = None,
-) -> tuple[float, float]:
-    """Сделать одну попытку руки: проверить добавление признака к набору.
-
-    Args:
-        data: Таблица, в которой уже рассчитана колонка arm.name.
-        features: Текущий набор признаков S без проверяемой руки.
-        arm: Проверяемый кандидат.
-        fold: Индексы train и validation для этой попытки.
-        baseline_score: Качество S на том же фолде с теми же параметрами модели.
-        model_params: Параметры CatBoost.
-
-    Returns:
-        Пара (качество, награда), где награда = nDCG(S + arm) - nDCG(S).
-    """
-    score = evaluate_features(data, features + [arm.name], fold, model_params)
-    reward = score - baseline_score
-    return score, reward
-
-
 # ---------------------------------------------------------------------------
 # 4. Подготовка поиска и распределение бюджета
 # ---------------------------------------------------------------------------

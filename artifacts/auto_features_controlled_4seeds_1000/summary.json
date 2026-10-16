@@ -1,0 +1,578 @@
+{
+  "experiment": "from_scratch_with_control",
+  "base_features": [
+    "category",
+    "subcategory"
+  ],
+  "train_rows": 114257,
+  "train_impressions": 3000,
+  "candidate_arms": [
+    {
+      "group": "user",
+      "statistic": "impressions",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "impressions",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "impressions",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "impressions",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "impressions",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "clicks",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "clicks",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "clicks",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "clicks",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "clicks",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "ctr",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "ctr",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "ctr",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user",
+      "statistic": "ctr",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "impressions",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "impressions",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "impressions",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "impressions",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "impressions",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "clicks",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "clicks",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "clicks",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "clicks",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "clicks",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "impressions",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "impressions",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "impressions",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "impressions",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "impressions",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "clicks",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "clicks",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "clicks",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "clicks",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "clicks",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "ctr",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "ctr",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "ctr",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_item",
+      "statistic": "ctr",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "impressions",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "impressions",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "impressions",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "impressions",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "impressions",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "clicks",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "clicks",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "clicks",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "clicks",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "clicks",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "ctr",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "ctr",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "ctr",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_category",
+      "statistic": "ctr",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "impressions",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "impressions",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "impressions",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "impressions",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "impressions",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "clicks",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "clicks",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "clicks",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "clicks",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "clicks",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "ctr",
+      "window": "6h",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "ctr",
+      "window": "1d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "ctr",
+      "window": "7d",
+      "column": null
+    },
+    {
+      "group": "user_subcategory",
+      "statistic": "ctr",
+      "window": "all",
+      "column": null
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_length"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_contains_item"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_unique_categories"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_unique_subcategories"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_category_clicks"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_category_share"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_subcategory_clicks"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_subcategory_share"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "title_length"
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "abstract_length"
+    }
+  ],
+  "selected_arms": [
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_subcategory_share"
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_category_share"
+    }
+  ],
+  "feature_columns": [
+    "category",
+    "subcategory",
+    "history_subcategory_share",
+    "item_previous_ctr_3d",
+    "history_category_share"
+  ],
+  "cv_score": 0.40241547885976786,
+  "control_score": 0.3342127977885659,
+  "evaluations": 533,
+  "trees_built": 76150,
+  "elapsed_seconds": 1233.0032323939959,
+  "search_settings": {
+    "budget": 1000,
+    "max_features": 15,
+    "min_gain": 0.001,
+    "control_fraction": 0.2,
+    "screen_iterations": 50,
+    "n_finalists": 3,
+    "seeds": [
+      42,
+      0,
+      1,
+      2
+    ],
+    "patience": 2
+  },
+  "model_params": {
+    "iterations": 300,
+    "learning_rate": 0.05,
+    "depth": 8,
+    "loss_function": "Logloss",
+    "thread_count": 4,
+    "random_seed": 42,
+    "verbose": false,
+    "allow_writing_files": false
+  }
+}

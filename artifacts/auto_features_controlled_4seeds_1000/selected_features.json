@@ -1,0 +1,31 @@
+{
+  "model": "model.cbm",
+  "base_features": ["category", "subcategory"],
+  "selected_arms": [
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_subcategory_share"
+    },
+    {
+      "group": "item",
+      "statistic": "ctr",
+      "window": "3d",
+      "column": null
+    },
+    {
+      "group": "column",
+      "statistic": "impressions",
+      "window": "all",
+      "column": "history_category_share"
+    }
+  ],
+  "feature_columns": [
+    "category",
+    "subcategory",
+    "history_subcategory_share",
+    "item_previous_ctr_3d",
+    "history_category_share"
+  ]
+}
